@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_1"
+    tools:context=".MainDangBai">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="Đăng bài"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/nameComic"
+            android:hint="Tên truyện"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></EditText>
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/contentComic"
+            android:hint="Nội dung"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></EditText>
+        <EditText
+            android:inputType="textUri"
+            android:hint="Ảnh"
+            android:id="@+id/linkComic"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/dbdangbai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Đăng bài" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:text="Quay lại" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
