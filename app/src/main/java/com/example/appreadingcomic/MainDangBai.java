@@ -54,7 +54,8 @@ public class MainDangBai extends AppCompatActivity {
                 }
                 else{
                     databaseHelper.AddTruyen(comic);
-                    onBackPressed();
+                    Intent intent = new Intent(MainDangBai.this, MainAdmin.class);
+                    startActivity(intent);
                     Toast.makeText(MainDangBai.this,"Thêm truyện thành công",Toast.LENGTH_SHORT).show();
                     Log.e("Thêm truyện : ","Thành công");
                 }
